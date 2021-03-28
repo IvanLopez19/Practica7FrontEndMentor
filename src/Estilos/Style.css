@@ -10,6 +10,7 @@ body{
     padding: 2rem;
     font-family: Manrope;
     font-size: 17px;
+    height: 100vh;
 }
 
 .App{
@@ -17,7 +18,7 @@ body{
 }
 
 .container{
-    height: 100vh;
+    height: 100%;
     flex-direction: row;
     display: flex;
     width: 200%;
@@ -31,6 +32,8 @@ body{
 
 .information{
     text-align: center;
+    display: flex;
+    flex-direction: column;
     width: 200%;
     height: 100%;
     position:relative;
@@ -76,7 +79,7 @@ body{
     border-radius: 30px;
     background-color: white;
     position: relative;
-    top: -400px;
+    top: -250px;
     margin-left: auto;
     margin-right: auto;
     width:fit-content;
@@ -86,4 +89,25 @@ body{
     display: inline-block;
     /* margin: 0 10px; */
     padding: 7px 15px;
+}
+
+@media screen and (min-width:768px){
+    .information{
+        flex-direction: row;
+    }
+    .information .image{
+        min-width: 15rem;
+    }
+    .information .main{
+        text-align: left;
+    }
+    body{
+        padding: 10rem;
+    }
+    .button{
+        top: -60px;
+        left: 10rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
