@@ -1,0 +1,89 @@
+:root{
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+--Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+--Grayish-Blue: hsl(212, 23%, 69%);
+--Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 2rem;
+    font-family: Manrope;
+    font-size: 17px;
+}
+
+.App{
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    width: 200%;
+}
+.container.left{
+    
+    transform: translateX(0);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.information{
+    text-align: center;
+    width: 200%;
+    height: 100%;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.container.right{
+    transform: translateX(-50%);
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+.information header{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem 2rem;
+}
+.information .image{
+    width: 100%;
+    box-shadow: 0 13px 15px rgba(0, 0, 0, 0.15) ;
+    border-radius: 7px;
+}
+
+.information .text{
+    color:var(--Very-Dark-Grayish-Blue);
+}
+
+.information .person .name, .information .person .profetion{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+.information .person .name{
+    font-weight: 700;
+}
+
+.information .person .profetion{
+    color: var(--Grayish-Blue);
+}
+
+.button{
+    border-radius: 30px;
+    background-color: white;
+    position: relative;
+    top: -400px;
+    margin-left: auto;
+    margin-right: auto;
+    width:fit-content;
+}
+
+.button .prev, .button .next{
+    display: inline-block;
+    /* margin: 0 10px; */
+    padding: 7px 15px;
+}
